@@ -1,5 +1,5 @@
 # INVASE
-Title: IINVASE: Instance-wise Variable Selection using Neural Networks
+Title: INVASE: Instance-wise Variable Selection using Neural Networks
 
 Authors: Jinsung Yoon, James Jordon, Mihaela van der Schaar
 
