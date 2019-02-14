@@ -1,4 +1,13 @@
-"""
+'''
+Written by Jinsung Yoon
+Date: Jan 1th 2019
+INVASE: Instance-wise Variable Selection using Neural Networks Implementation on Synthetic Datasets
+Reference: J. Yoon, J. Jordon, M. van der Schaar, "IINVASE: Instance-wise Variable Selection using Neural Networks," International Conference on Learning Representations (ICLR), 2019.
+Paper Link: https://openreview.net/forum?id=BJg_roAcK7
+Contact: jsyoon0823@g.ucla.edu
+
+---------------------------------------------------
+
 Generating Synthetic Data for Synthetic Examples
 There are 6 Synthetic Datasets
 
