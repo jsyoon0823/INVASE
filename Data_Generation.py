@@ -20,7 +20,7 @@ Y = 1/(1+logit)
 - Syn4: If X11 < 0, Syn1, X11 >= Syn2
 - Syn4: If X11 < 0, Syn1, X11 >= Syn3
 - Syn4: If X11 < 0, Syn2, X11 >= Syn3
-""" 
+'''
 #%% Necessary packages
 import numpy as np 
 
