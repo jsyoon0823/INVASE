@@ -13,14 +13,14 @@ the following applications.
 -   Instance-wise feature selection
 -   Prediction with instance-wise feature selection
 
-To run the pipeline for training and evaluation on time-series 
-prediction framwork, simply run python3 -m main_inavse.py.
+To run the pipeline for training and evaluation on INVASE framwork, 
+simply run python3 -m main_inavse.py.
 
 Note that any model architecture can be used as the actor and critic models 
 such as CNN. The condition for models is to have train and predict functions 
 as its subfunctions.
 
-## Stages of the time-series prediction:
+## Stages of the INVASE framework:
 
 -   Generate synthetic dataset (6 synthetic datasets)
 -   Train INVASE or INVASE- (without baseline)
