@@ -144,7 +144,7 @@ if __name__ == '__main__':
       '--lamda',
       help='inavse hyper-parameter lambda',
       default=0.1,
-      type=int)
+      type=float)
   parser.add_argument(
       '--actor_h_dim',
       help='hidden state dimensions for actor',
