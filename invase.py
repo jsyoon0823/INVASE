@@ -231,6 +231,9 @@ class invase():
          
       # Baseline output
       if self.model_type == 'invase':   
+        # Baseline loss
+        baseline_loss = self.baseline.train_on_batch(x_batch, y_batch)                        
+        # Baseline output
         baseline_out = self.baseline.predict(x_batch)
             
       ## Train actor
@@ -249,10 +252,17 @@ class invase():
       # Train the actor
       actor_loss = self.actor.train_on_batch(x_batch, y_batch_final)
 
-      # Print the progress
-      dialog = 'Iterations: ' + str(iter_idx) + \
-               ', critic accuracy: ' + str(critic_loss[1]) + \
-               ', actor loss: ' + str(np.round(actor_loss,4))
+      if self.model_type == 'invase':
+        # Print the progress
+        dialog = 'Iterations: ' + str(iter_idx) + \
+                 ', critic accuracy: ' + str(critic_loss[1]) + \
+                 ', baseline accuracy: ' + str(baseline_loss[1]) + \
+                 ', actor loss: ' + str(np.round(actor_loss,4))
+      elif self.model_type == 'invase_minus':
+        # Print the progress
+        dialog = 'Iterations: ' + str(iter_idx) + \
+                 ', critic accuracy: ' + str(critic_loss[1]) + \
+                 ', actor loss: ' + str(np.round(actor_loss,4))
 
       if iter_idx % 100 == 0:
         print(dialog)
